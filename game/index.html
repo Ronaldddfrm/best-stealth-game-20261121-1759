@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery of Shadows — a stealth game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="hud">
+    <div id="hud-left">
+      <span id="hud-level">Gallery I</span>
+      <span id="hud-gems">&#9670; 0/3</span>
+      <span id="hud-coins">&#9679; 3</span>
+    </div>
+    <div id="hud-center"><span id="hud-alert">UNSEEN</span></div>
+    <div id="hud-right">
+      <span id="hud-time">00:00</span>
+      <button id="btn-mute" type="button" title="Mute (M)">&#9834;</button>
+      <button id="btn-pause" type="button" title="Pause (P)">II</button>
+    </div>
+  </div>
+  <div id="detect"><div id="detect-fill"></div><span id="detect-label">SPOTTED</span></div>
+  <div id="toast"></div>
+  <div id="overlay">
+    <div id="panel">
+      <h1 id="ov-title">GALLERY OF SHADOWS</h1>
+      <p id="ov-sub">A stealth game in the Meridian Gallery, after dark.</p>
+      <div id="ov-body"></div>
+      <button id="ov-btn" type="button">Begin the heist</button>
+      <p id="ov-hint">Move <b>WASD / arrows</b> &nbsp;·&nbsp; Sneak <b>Shift</b> &nbsp;·&nbsp; Throw a coin <b>click</b> &nbsp;·&nbsp; Pause <b>P</b> &nbsp;·&nbsp; Mute <b>M</b></p>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
